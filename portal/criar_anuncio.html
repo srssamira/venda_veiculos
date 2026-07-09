@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Novo Anúncio - Portal do Anunciante</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal do Anunciante</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="meus_anuncios.html">Meus Anúncios</a></li>
+                <li><a href="criar_anuncio.html">Criar Anúncio</a></li>
+                <li><a href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="ad-creation-form">
+            <h2>Informações do Veículo</h2>
+            <input type="text" name="marca" placeholder="Marca" required>
+            <input type="text" name="modelo" placeholder="Modelo" required>
+            <input type="number" name="ano" placeholder="Ano de Fabricação" required>
+            <input type="text" name="cor" placeholder="Cor" required>
+            <input type="number" name="quilometragem" placeholder="Quilometragem" required>
+            <textarea name="descricao" placeholder="Descrição do veículo" required></textarea>
+            <input type="text" name="valor" placeholder="Valor de Venda" required>
+            <input type="text" name="estado" placeholder="Estado (UF)" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <label for="fotos">Fotos (mínimo 3):</label>
+            <input type="file" name="fotos" multiple required>
+            <button type="submit">Criar Anúncio</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Venda de Veículos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
